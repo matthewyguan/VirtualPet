@@ -19,10 +19,11 @@ void draw()
   ellipse(x,y,rx,ry);
   //body ^^^
   fill(#C4840C);
-  arc(500,100,275,200,0,PI);
-  arc(500,100,275,300,0,PI); 
-  fill(#FFFFFF);
-  arc(500,100,275,100,0,PI);
+  beginShape();
+  vertex(360,100);
+  bezierVertex(360,165,640,165,640,100);
+  bezierVertex(640,260,360,260,360,100);
+  endShape();
   //little things ^^^
   fill(#AA730C);
   ellipse(x,y-150,275,250);
@@ -62,5 +63,5 @@ void draw()
   line(x+45,y+145,x+45,y+162);
   //the claw things ^^^
   
-  
+ 
 }
